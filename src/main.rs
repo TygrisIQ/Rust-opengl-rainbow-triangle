@@ -44,7 +44,7 @@ fn main() {
 
     window.set_key_polling(true);
     window.set_framebuffer_size_polling(true);
-    //window.make_current();
+    window.make_current();
 
     gl::load_with(|s| window.get_proc_address(s) as *const _);
 
